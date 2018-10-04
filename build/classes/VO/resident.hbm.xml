@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.Resident_VO" table="resident">
+   
+   	<id name="resident_Id" type="int" column="RESIDENT_ID" >
+   		<generator class="increment"/>
+  	</id>
+  	
+	
+  	<property name="resident_Name">
+   		<column name="RESIDENT_NAME" />
+  	</property>
+  
+  	<property name="resident_Contact" type="long">
+   		<column name="RESIDENT_CONTACT" />
+  	</property>
+  
+  	<property name="alternative_No" type="long">
+   		<column name="ALTERNATIVE_NO" />
+  	</property>
+  	
+  	<property name="residential_type" type="long">
+   		<column name="RESIDENTIAL_TYPE" />
+  	</property>
+    
+    <property name="house_No">
+   		<column name="HOUSE_NO" />
+  	</property>
+  	
+  	<property name="wing_Add">
+   		<column name="WING_ADDRESS" />
+  	</property>
+  	
+  	<property name="resident_Email">
+   		<column name="RESIDENT_EMAIL" />
+  	</property>
+  	
+  	<property name="occupation_Add">
+   		<column name="OCCUPATION_ADDRESS" />
+  	</property>
+  	
+  	<property name="emergancy_No" type="long">
+   		<column name="EMERGANCY_NO" />
+  	</property>
+  
+  	
+  	
+  
+ </class>
+
+</hibernate-mapping>

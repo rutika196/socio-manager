@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.User_VO" table="user">
+   
+   	<id name="u_Id" type="long" column="U_ID" >
+   		<generator class="increment"/>
+  	</id>
+
+  	<property name="un">
+   		<column name="USERNAME" />
+  	</property>
+  
+  	<property name="pwd">
+  		<column name="PASSWORD"/>
+  	</property>
+  	
+  	<property name="email">
+   		<column name="EMAIL" />
+  	</property>
+  
+  	<property name="status">
+   		<column name="STATUS" />
+  	</property>
+  
+  	<property name="type">
+  		<column name="TYPE"/>
+  	</property>
+  	  	
+ </class>
+
+</hibernate-mapping>

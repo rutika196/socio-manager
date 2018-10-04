@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.Socdetail_VO" table="society">
+   
+   	<id name="soc_Id" type="int" column="SOCIETY_ID" >
+   		<generator class="increment"/>
+  	</id>
+
+  	<property name="board_Name">
+   		<column name="BOARD_NAME" />
+  	</property>
+  
+  	
+  	<property name="designation_Name">
+   		<column name="DESIGNATION_NAME" />
+  	</property>
+  	
+  	<property name="society_Name">
+   		<column name="SOCIETY_NAME" />
+  	</property>
+  	
+  	
+  	<property name="society_add">
+   		<column name="SOCIETY_ADDRESS" />
+  	</property>
+  	
+  	<property name="pincode">
+   		<column name="pincode" />
+  	</property>
+  	
+  	<property name="house_No">
+   		<column name="TOTAL_NO_OF_HOUSE" />
+  	</property>
+  	
+  	<property name="association_Email">
+   		<column name="ASSOCIATION_EMAIL" />
+  	</property>
+  	
+  	<property name="association_Contact">
+   		<column name="ASSOCIATION_CONTACT" />
+  	</property>
+  	
+  	<property name="msg">
+   		<column name="MESSAGES" />
+  	</property>
+  	
+  	<many-to-one name="state_Id" column="STATE_ID" class="VO.State_VO"></many-to-one>
+  
+  <many-to-one name="country_Id" column="COUNTRY_ID" class="VO.Country_VO"></many-to-one>
+ </class>
+
+</hibernate-mapping>

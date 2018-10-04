@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.Chairman_VO" table="chairman">
+   
+   	<id name="chairman_Id" type="int" column="CHAIRMAN_ID" >
+   		<generator class="increment"/>
+  	</id>
+  	
+	<property name="Soc_Name">
+   		<column name="SOCIETY_NAME" />
+  	</property>
+  
+
+  	<property name="chairman_Name">
+   		<column name="CHAIRMAN_NAME" />
+  	</property>
+  
+  	<property name="chairman_Add">
+   		<column name="CHAIRMAN_ADDRESS" />
+  	</property>
+  
+  	<property name="chairman_contact" type="long">
+   		<column name="CHAIRMAN_CONTACT" />
+  	</property>
+  	
+  	<property name="chairman_Email">
+   		<column name="CHAIRMAN_EMAIL" />
+  	</property>
+  
+  
+ </class>
+
+</hibernate-mapping>
